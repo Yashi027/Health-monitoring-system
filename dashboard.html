@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    *{
+        margin:0px;
+    }
+    nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: rgb(21, 89, 111);
+    height: 50px;
+    
+    font-size: 1.2rem;
+}
+nav div {
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    
+}
+nav a{
+    text-decoration: none;
+}
+#hero{
+    display:flex;
+    justify-content: space-around;
+    align-items:center ;
+    margin: 5px;
+}
+.hero-content{
+margin: 10px;
+height:100px;
+width:40%;
+}
+.hero-btn button{
+    display: inline;
+    padding:4px;
+    border:1px solid black;
+    border-radius: 6px;
+    margin-top: 4px;
+    font-weight: 700;
+    cursor:pointer;
+}
+.hero-image img{
+  border-radius:5px ;
+}
+#about-us {
+    background-color: var(--white);
+    padding: 4rem 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+#about-us h2 {
+    font-size: 2.2rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    text-align: center;
+    padding:4px;
+}
+
+.about-us, .why-us {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.about-us p, .why-us p {
+    font-size: 1rem;
+    color: var(--text-color);
+    line-height: 1.8;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 4px;
+}
+
+.why-us-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.why-us-card {
+    background-color:rgb(21, 89, 111) ;
+    color:white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.why-us-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.why-us-card p {
+    color: var(--text-color);
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.why-us-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.footer {
+    background-color: rgb(21, 89, 111);
+    color: white;
+    height: 50px;
+    padding: 8px;
+    font-size: large;
+    text-align: center;
+    width: 100%;
+}
+</style>
+<body>
+    <nav>
+        <a href="dashboard.html"><div>Home</div></a>
+        <a href="testing.html"><div>Testings</div></a>
+        <a href="appointment.html"><div>Appointments</div></a>
+        <a href="history.html"><div>History</div></a>
+    </nav>
+    <main id="hero">
+        <div class="hero-content">
+          <h2>Solutions for Healthcare</h2>
+          <p>
+            Deliver quality healthcare services and improve patient experience.
+            Track diagnostic trends, patient satisfaction, and more with our
+            comprehensive monitoring system.
+          </p>
+          <div class="hero-btn">
+            <button class="primary-btn">Book Free Trial</button>
+          </div>
+        </div>
+        <div class="hero-image">
+          <div class="dashboard-placeholder">
+            <img
+              src="https://media.istockphoto.com/id/1418999473/photo/doctors-comforting-disabled-elderly-patient.jpg?s=612x612&w=0&k=20&c=ggVR5D9U8IY7irIrgvfqSmlLwA7se4vc2fRSAjV2lSs="
+              alt=""
+            />
+          </div>
+        </div>
+    </main>
+   <section id="about-us">
+    <div class="about-us">
+        <h2>About Us</h2>
+        <p>
+          We empower healthcare providers with cutting-edge
+          technology to enhance patient care, streamline operations, and deliver
+          exceptional experiences.
+        </p>
+      </div>
+    <div class="why-us">
+        <h2>Why Choose Us?</h2>
+        <div class="why-us-grid">
+          
+          <div class="why-us-card">
+            <h3>Real-Time Insights</h3>
+            <p>
+              Get accurate and up-to-date data to make informed decisions and
+              improve patient outcomes.
+            </p>
+          </div>
+          <div class="why-us-card">
+            <h3>User-Friendly Design</h3>
+            <p>
+              Our intuitive interface ensures easy adoption for both healthcare
+              professionals and administrators.
+            </p>
+          </div>
+          <div class="why-us-card">
+            <h3>24/7 Support</h3>
+            <p>
+              We’re here to assist you at any time, ensuring seamless operations
+              and peace of mind.
+            </p>
+          </div>
+        </div>
+      </div>
+      </section>
+      <div class="footer">
+        &copy; Health Care Monitor. All rights reserved.
+      </div>
+</body>
+</html>
