@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profile</title>
+    <title>Testings</title>
 </head>
 <style>
     nav {
@@ -12,12 +12,60 @@
     align-items: center;
     background-color: rgb(21, 89, 111);
     height: 50px;
-    color: white;
+    
     font-size: 1.2rem;
 }
 nav div {
     padding: 8px;
     cursor: pointer;
+    color: white;
+    
+}
+nav a{
+    text-decoration: none;
+}
+.testings,.top-testing,.vital_organ_test {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.testing-card {
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center ;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.testing-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.test-card{
+    padding:1.5rem;
+    border:1.5px dotted rgb(117, 116, 116);
+    border-radius: 8px;
+    text-align: center;
+}
+img{
+    width:100%;
+    margin-top: 20px;
+}
+.vital_organ_test a{
+    display:inline;
+    position:absolute;
+    right:5px;
+}
+.footer {
+    background-color: rgb(21, 89, 111);
+    color: white;
+    height: 50px;
+    padding: 8px;
+    font-size: large;
+    text-align: center;
+    width: 100%;
+    margin-top: 10px;
 }
 </style>
 <body>
@@ -27,5 +75,47 @@ nav div {
         <a href="appointment.html"><div>Appointments</div></a>
         <a href="history.html"><div>History</div></a>
     </nav>
+    <h2>Doctor Created Health Checks</h2>
+    <div class="testings">
+     <div class="testing-card">Full Body Check-up</div>
+     <div class="testing-card">Diabetes</div>
+     <div class="testing-card">Thyroid</div>
+     <div class="testing-card">Vitamin</div>
+     <div class="testing-card">Heart</div>
+     <div class="testing-card">Kidney</div>
+     <div class="testing-card">Liver</div>
+     <div class="testing-card">Hairfall</div>
+     <div class="testing-card">Fever</div>
+     <div class="testing-card">Senior Citizen</div>
+    </div>
+    <h2>Top-Booked Tests</h2>
+    <div class="top-testing">
+        <div class="test-card">CBC(Complete Blood Count) <br>30 tests included.</div>
+        <div class="test-card">HbA1c Test(Hemoglobin A1c) <br>3 tests included.</div>
+        <div class="test-card">FBS(Fasting blood Sugar)Test <br>1 test included.</div>
+        <div class="test-card">KFT with Electrolytes(Kidney Function) <br>14 tests included.</div>
+        <div class="test-card">TSH Test(Thyroid Stimulating Hormone) <br>1 test included.</div>
+        <div class="test-card">Thyroid Profile(T3 T4 TSH)Test <br>4 tests included.</div>
+        <div class="test-card">Glucose Fasting and PP Test <br>2 tests included.</div>
+        <div class="test-card">LFT (Liver Function Test) <br>11 tests included.</div>
+        <div class="test-card">Lipid Profile Test <br>8 tests included.</div>
+        <div class="test-card">Cholestorl Test <br>1 test included.</div>
+    </div>
+     <img src="https://images.apollo247.in/pd-cms/cms/2023-08/Group%201171279304.png?tr=q-80,f-webp,w-1300,dpr-2,c-at_max" alt="">
+     <h2>Vital Organs (8)</h2>
+     <a href="vital.html">View All</a>
+     <div class="vital_organ_test">
+        <div class="test-card">Thyroid</div>
+        <div class="test-card">Heart</div>
+        <div class="test-card">Joint Pain</div>
+        <div class="test-card">Kidney</div>
+        <div class="test-card">Liver</div>
+        <div class="test-card">Bone and Joint</div>
+        <div class="test-card">Lungs</div>
+        <div class="test-card">Full Body Checkup</div>
+     </div>
+     <div class="footer">
+        &copy; Health Care Monitor. All rights reserved.
+      </div>
 </body>
 </html>
